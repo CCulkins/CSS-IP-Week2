@@ -1,0 +1,54 @@
+
+*:not(body):not(html) {
+  box-sizing: border-box;
+  margin: .5vh .5vw .5vh .5vw;
+}
+
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrap {
+  background-color: lightgrey;
+}
+
+
+@media only screen and (max-width: 400px) {
+header {
+  border: 1px solid black;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/teachaite4.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 1000px) {
+  header {
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/teachaite4.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  header {
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/teachaite4.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+}
