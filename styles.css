@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One|Poppins:300,700,500);
 
+p {
+  font-family: "Poppins";
+  font-weight: 300;
+}
 
 #header {
 
@@ -28,7 +32,7 @@ h1 {
 @media only screen and (max-width: 400px) {
 .wrap {
   width: 100vw;
-  height: 100vh;
+  height: 175vh;
   padding-left: 4vw;
   padding-top: 2vh;
   background-image: url(img/teachaite4.png);
@@ -44,21 +48,73 @@ header {
   background-color: grey;
 }
 
-#siteNav p {
+a {
   font-family: "Poppins";
   font-weight: 500;
   font-size: 1em;
   float: left;
-  padding-right: 4vw;
+  padding-right: 4.15vw;
+  margin-top: .1vh;
+  margin-bottom: .1vh;
+  text-decoration: none;
+  color: black;
 }
 
-#siteNav p:hover {
-  color: darkred;
+a:hover {
+  color: firebrick;
 }
 
 #siteTitle {
   background-color: white;
   margin-right: 3vw;
+
+}
+
+#collage {
+  width: 90vw;
+}
+
+footer {
+width: 91vw;
+background-color: grey;
+padding-right: 2vw;
+padding-left: 2vw;
+}
+
+footer a {
+  font-size: .75em;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  font-weight: 500;
+}
+
+#mailing {
+  font-weight: 500;
+}
+
+#signUp {
+  height: 25px;
+  width: 86vw;
+  margin-bottom: 7vh;
+  background: white;
+}
+
+.submit {
+  text-align: center;
+  height: 25px;
+  width: 75px;
+  box-sizing: border-box;
+  position: relative;
+  top: -32px;
+  right: -3px;
+  float: right;
+  color: black;
+  background: lightgrey;
+}
+
+.submit:hover {
+  color: firebrick;
+}
 
 }
 
