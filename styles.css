@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: .5vh .5vw .5vh .5vw;
 }
+
 .wrap {
   width: 100vw;
   height: 100vh;
@@ -22,7 +23,6 @@ p {
     font-family: "Fjalla One";
     font-size: 2em;
 }
-
 
 .cf:after {
   content: "";
@@ -51,9 +51,9 @@ a:hover {
 
 @media only screen and (max-width: 400px) {
 
-  .hide {
-    display: none;
-  }
+.hide {
+  display: none;
+}
 
 .wrap {
   height: 145vh;
@@ -73,7 +73,6 @@ header {
   background-color: grey;
 }
 
-
 #siteTitle {
   margin-right: 3vw;
   background-color: white;
@@ -84,10 +83,10 @@ header {
 }
 
 footer {
-width: 91vw;
-background-color: grey;
-padding-right: 2vw;
-padding-left: 2vw;
+  width: 91vw;
+  background-color: grey;
+  padding-right: 2vw;
+  padding-left: 2vw;
 }
 
 footer a {
@@ -129,8 +128,10 @@ footer a {
   display: none;
 }
 
+#locations {
+  display: none;
 }
-
+}
 
 @media only screen and (min-width: 401px) and (max-width: 550px) {
 
@@ -144,8 +145,8 @@ footer a {
   }
 
 header {
-width: 30vw;
-background: gray;
+  width: 30vw;
+  background: gray;
 }
 
 #siteTitle p {
@@ -219,71 +220,53 @@ footer a {
 .submit:hover {
   color: firebrick;
 }
+
+#locations {
+  display: none;
 }
 
+}
 
-@media only screen and (min-width: 551px) and (max-width: 940px) {
+@media only screen and (min-width: 551px) and (max-width: 854px) {
   .wrap {
     background-position: left 53vh;
     background-size: 38vw;
-  }
-
-~
-  #siteNav {
-    box-sizing: border-box;
-    border: 1px solid black;
-    margin-top: 15vh;
-    float: left;
-    width: 20vw;
-    position: relative;
-    margin-left: -120px;
-    top: -40px;
-    line-height: 2em;
-
-  }
-
-  #siteNav a{
-    display: block;
-    font-size: 1em;
-    float: left;
-    padding-left: .5em;
-    padding-right: .5em;
-    position: relative;
-    text-decoration: none;
-    color: black;
-    }
-    ~
-
-  a {
-    font-family: "Poppins";
-    font-weight: 500;
-    font-size: 1em;
-    float: left;
-    padding-right: 4.15vw;
-    margin-top: .1vh;
-    margin-bottom: .1vh;
-    text-decoration: none;
-    color: black;
-  }
-
-  a:hover {
-    color: firebrick;
-  }
-
-  #siteTitle {
-    color: firebrick;
+    padding-top: 3vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100vh;
+    width: 100vw;
   }
 
   header {
-    width: 30vw;
-    float: left;
+  width: 30vw;
+  max-width: 175px;
+  background: gray;
+  }
+
+  #siteTitle p {
+    font-size: 1.5em;
+    background: white;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  #siteNav a {
+    padding-left: 2.25vw;
+    padding-right: 3.5vw;
+    font-size: 1em;
   }
 
   #collage {
-    height: 100vh;
+    width: 99vw;
+    max-height: 99vh;
+    max-width: 99vh;
     box-sizing: border-box;
     position: absolute;
-    left: 300px;
+    left: 205px;
+    top: 4vh;
+    margin-left: 1vw;
 
   }
 
@@ -291,75 +274,153 @@ footer a {
     display: none;
   }
 
-  #siteNav {
+  footer {
     box-sizing: border-box;
-    border: 1px solid black;
-    margin-top: 15vh;
-    float: left;
-    width: 20vw;
     position: relative;
-    margin-left: -120px;
-    top: -40px;
-    line-height: 2em;
-
+    width: 30vw;
+    max-width: 175px;
+    background-color: grey;
+    padding-left: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
   }
 
-  #siteNav a{
-    display: block;
-    font-size: 1em;
-    float: left;
-    padding-left: .5em;
-    padding-right: .5em;
-    position: relative;
-    text-decoration: none;
-    color: black;
-    }
+  footer a {
+    font-size: .75em;
+    font-weight: 500;
+    text-align: center;
+    width: 138px;
+    padding-left: 2vw;
+    border: 1px solid black;
+  }
 
+  #mailing {
+    font-weight: 500;
+    font-size: .85em;
+  }
+
+  #signUp {
+    height: 25px;
+    width: 138px;
+    margin-bottom: 7vh;
+    background: white;
+  }
+
+  .submit {
+    text-align: center;
+    height: 25px;
+    width: 138px;
+    box-sizing: border-box;
+    position: relative;
+    top: .25vh;
+    right: -3px;
+    float: right;
+    color: black;
+    background: lightgrey;
+  }
+
+  .submit:hover {
+    color: firebrick;
+  }
+
+  #locations {
+    display: none;
+  }
 }
 
-
-@media only screen and (min-width: 941px) {
+@media only screen and (min-width: 855px) {
   .wrap {
-    border: 1px solid black;
     background-position: left 53vh;
     background-size: 38vw;
+    padding-top: 3vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100vh;
+    width: 100vw;
   }
 
-  #siteNav {
-    box-sizing: border-box;
-    border: 1px solid black;
-    margin-top: 15vh;
-    float: left;
-    width: 20vw;
-    position: relative;
-    margin-left: -120px;
-    top: -40px;
-    line-height: 2em;
-
+    header {
+    max-width: 175px;
+    background: gray;
+    position: absolute;
+    right: 655px;
   }
 
-  #siteNav a{
-    display: block;
+  #siteTitle p {
+    font-size: 1.5em;
+    background: white;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+
+  #siteNav a {
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 1em;
-    float: left;
-    padding-left: .5em;
-    padding-right: .5em;
+  }
+
+  footer {
+    box-sizing: border-box;
     position: relative;
-    text-decoration: none;
+    top: -4px;
+    width: 30vw;
+    max-width: 175px;
+    background-color: grey;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    float: left;
+  }
+
+  footer a {
+    font-size: .75em;
+    font-weight: 500;
+    text-align: center;
+    width: 138px;
+    padding-left: 1vw;
+    border: 1px solid black;
+  }
+
+  #mailing {
+    font-weight: 500;
+    font-size: .85em;
+  }
+
+  #signUp {
+    height: 25px;
+    width: 138px;
+    margin-bottom: 7vh;
+    background: white;
+  }
+
+  .submit {
+    text-align: center;
+    height: 25px;
+    width: 138px;
+    box-sizing: border-box;
+    position: relative;
+    top: .25vh;
+    right: -3px;
+    float: right;
     color: black;
-    }
+    background: lightgrey;
+  }
+
+  .submit:hover {
+    color: firebrick;
+  }
 
   #collage {
-    height: 100vh;
+    height: 98vh;
     box-sizing: border-box;
     position: absolute;
-    right: 0px;
-    top: 0px;
-
+    right: 20px;
+    top: 4vh;
   }
 
   #collageThin {
     display: none;
   }
-
 }
