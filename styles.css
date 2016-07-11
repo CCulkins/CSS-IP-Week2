@@ -1,22 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One|Poppins:300,700,500);
 
+*:not(body):not(html) {
+  box-sizing: border-box;
+  margin: .5vh .5vw .5vh .5vw;
+}
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/teachaite4.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+}
+
 p {
   font-family: "Poppins";
   font-weight: 300;
 }
 
-#header {
-
+#siteTitle p{
+    font-family: "Fjalla One";
+    font-size: 2em;
 }
 
-h1 {
-  font-family: "Fjalla One";
-}
-
-*:not(body):not(html) {
-  box-sizing: border-box;
-  margin: .5vh .5vw .5vh .5vw;
-}
 
 .cf:after {
   content: "";
@@ -28,38 +34,11 @@ h1 {
   background-color: lightgrey;
 }
 
-
-@media only screen and (max-width: 400px) {
-
-  .hide {
-    display: none;
-  }
-
-.wrap {
-  width: 100vw;
-  height: 155vh;
-  padding-left: 4vw;
-  padding-top: 2vh;
-  background-image: url(img/teachaite4.png);
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-
-header {
-  width: 90vw;
-  text-align: left;
-  padding-left: 2vw;
-  background-color: grey;
-}
-
 a {
   font-family: "Poppins";
   font-weight: 500;
   font-size: 1em;
   float: left;
-  padding-right: 4.15vw;
   margin-top: .1vh;
   margin-bottom: .1vh;
   text-decoration: none;
@@ -70,10 +49,34 @@ a:hover {
   color: firebrick;
 }
 
-#siteTitle {
-  background-color: white;
-  margin-right: 3vw;
+@media only screen and (max-width: 400px) {
 
+  .hide {
+    display: none;
+  }
+
+.wrap {
+  height: 145vh;
+  padding-left: 4vw;
+  padding-top: 2vh;
+  background-position: bottom;
+}
+
+a {
+  padding-right: 4.15vw;
+}
+
+header {
+  width: 90vw;
+  text-align: left;
+  padding-left: 2vw;
+  background-color: grey;
+}
+
+
+#siteTitle {
+  margin-right: 3vw;
+  background-color: white;
 }
 
 #collage {
@@ -131,14 +134,21 @@ footer a {
 
 @media only screen and (min-width: 401px) and (max-width: 550px) {
 
+.wrap {
+    background-position: left 53vh;
+    background-size: 35vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:5vw;
+  }
+
 #siteNav {
   box-sizing: border-box;
-  border: 1px solid black;
   margin-top: 15vh;
   float: left;
   width: 20vw;
   position: relative;
-  margin-left: -120px;
+  margin-left: -130px;
   top: -40px;
   line-height: 2em;
 
@@ -165,31 +175,108 @@ footer a {
   box-sizing: border-box;
   position: relative;
   top: -53vh;
+  margin-right: 2vw;
 }
 
-#siteTitle {
-  color: pink;
+#siteTitle  p{
+  color: black;
   float: left;
-  font-size: 5vw;
+  font-size: 1.75em;
 }
 
 footer {
   box-sizing: border-box;
   position: relative;
-  top: -53vh;
-  border: 1px solid black;
+  top: -52vh;
+  width: 92vw;
+  background-color: grey;
+  padding-left: 2vw;
+}
+
+footer a {
+  font-size: .75em;
+  font-weight: 500;
+  text-align: center;
+  width: 21vw;
+  padding: none;
+}
+
+#mailing {
+  font-weight: 500;
+}
+
+#signUp {
+  height: 25px;
+  width: 86vw;
+  margin-bottom: 7vh;
+  background: white;
+}
+
+.submit {
+  text-align: center;
+  height: 25px;
+  width: 75px;
+  box-sizing: border-box;
+  position: relative;
+  top: -32px;
+  right: -3px;
+  float: right;
+  color: black;
+  background: lightgrey;
+}
+
+.submit:hover {
+  color: firebrick;
 }
 }
 
 
-@media only screen and (min-width: 551px) and (max-width: 1000px) {
+@media only screen and (min-width: 551px) and (max-width: 940px) {
   .wrap {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(img/teachaite4.png);
-    background-size: 30vw;
-    background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: left 53vh;
+    background-size: 38vw;
+  }
+
+~
+  #siteNav {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-top: 15vh;
+    float: left;
+    width: 20vw;
+    position: relative;
+    margin-left: -120px;
+    top: -40px;
+    line-height: 2em;
+
+  }
+
+  #siteNav a{
+    display: block;
+    font-size: 1em;
+    float: left;
+    padding-left: .5em;
+    padding-right: .5em;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    }
+    ~
+
+  a {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1em;
+    float: left;
+    padding-right: 4.15vw;
+    margin-top: .1vh;
+    margin-bottom: .1vh;
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: firebrick;
   }
 
   #siteTitle {
@@ -202,24 +289,86 @@ footer {
   }
 
   #collage {
-    width: 60vw;
-    float: right;
+    height: 100vh;
+    box-sizing: border-box;
+    position: absolute;
+    left: 300px;
+
   }
+
   #collageThin {
     display: none;
   }
 
+  #siteNav {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-top: 15vh;
+    float: left;
+    width: 20vw;
+    position: relative;
+    margin-left: -120px;
+    top: -40px;
+    line-height: 2em;
+
+  }
+
+  #siteNav a{
+    display: block;
+    font-size: 1em;
+    float: left;
+    padding-left: .5em;
+    padding-right: .5em;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    }
+
 }
 
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 941px) {
   .wrap {
     border: 1px solid black;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(img/teachaite4.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: left 53vh;
+    background-size: 38vw;
   }
+
+  #siteNav {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-top: 15vh;
+    float: left;
+    width: 20vw;
+    position: relative;
+    margin-left: -120px;
+    top: -40px;
+    line-height: 2em;
+
+  }
+
+  #siteNav a{
+    display: block;
+    font-size: 1em;
+    float: left;
+    padding-left: .5em;
+    padding-right: .5em;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    }
+
+  #collage {
+    height: 100vh;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+  }
+
+  #collageThin {
+    display: none;
+  }
+
 }
