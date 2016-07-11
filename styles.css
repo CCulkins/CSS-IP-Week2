@@ -135,35 +135,32 @@ footer a {
 @media only screen and (min-width: 401px) and (max-width: 550px) {
 
 .wrap {
-    background-position: left 53vh;
+    background-position: left 50vh;
     background-size: 35vw;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top:5vw;
+    padding-top:3vw;
+    height: 100vh;
   }
 
-#siteNav {
-  box-sizing: border-box;
-  margin-top: 15vh;
-  float: left;
-  width: 20vw;
-  position: relative;
-  margin-left: -130px;
-  top: -40px;
-  line-height: 2em;
-
+header {
+width: 30vw;
+background: gray;
 }
 
-#siteNav a{
-  display: block;
+#siteTitle p {
+  font-size: 1.5em;
+  background: white;
+  text-align: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+#siteNav a {
+  padding-left: 2.25vw;
+  padding-right: 2.25vw;
   font-size: 1em;
-  float: left;
-  padding-left: .5em;
-  padding-right: .5em;
-  position: relative;
-  text-decoration: none;
-  color: black;
-  }
+}
 
 #collage {
   display: none;
@@ -174,20 +171,14 @@ footer a {
   float: right;
   box-sizing: border-box;
   position: relative;
-  top: -53vh;
+  top: -38vh;
   margin-right: 2vw;
-}
-
-#siteTitle  p{
-  color: black;
-  float: left;
-  font-size: 1.75em;
 }
 
 footer {
   box-sizing: border-box;
   position: relative;
-  top: -52vh;
+  top: -38vh;
   width: 92vw;
   background-color: grey;
   padding-left: 2vw;
