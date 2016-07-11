@@ -30,9 +30,14 @@ h1 {
 
 
 @media only screen and (max-width: 400px) {
+
+  .hide {
+    display: none;
+  }
+
 .wrap {
   width: 100vw;
-  height: 175vh;
+  height: 155vh;
   padding-left: 4vw;
   padding-top: 2vh;
   background-image: url(img/teachaite4.png);
@@ -40,6 +45,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+
 
 header {
   width: 90vw;
@@ -116,21 +122,95 @@ footer a {
   color: firebrick;
 }
 
+#collageThin {
+  display: none;
 }
 
 }
 
-@media only screen and (min-width: 401px) and (max-width: 1000px) {
+
+@media only screen and (min-width: 401px) and (max-width: 550px) {
+
+#siteNav {
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin-top: 15vh;
+  float: left;
+  width: 20vw;
+  position: relative;
+  margin-left: -120px;
+  top: -40px;
+  line-height: 2em;
+
+}
+
+#siteNav a{
+  display: block;
+  font-size: 1em;
+  float: left;
+  padding-left: .5em;
+  padding-right: .5em;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  }
+
+#collage {
+  display: none;
+}
+
+#collageThin {
+  width: 60vw;
+  float: right;
+  box-sizing: border-box;
+  position: relative;
+  top: -53vh;
+}
+
+#siteTitle {
+  color: pink;
+  float: left;
+  font-size: 5vw;
+}
+
+footer {
+  box-sizing: border-box;
+  position: relative;
+  top: -53vh;
+  border: 1px solid black;
+}
+}
+
+
+@media only screen and (min-width: 551px) and (max-width: 1000px) {
   .wrap {
-    border: 1px solid black;
     width: 100vw;
     height: 100vh;
     background-image: url(img/teachaite4.png);
-    background-size: contain;
+    background-size: 30vw;
     background-repeat: no-repeat;
     background-position: bottom left;
   }
+
+  #siteTitle {
+    color: firebrick;
+  }
+
+  header {
+    width: 30vw;
+    float: left;
+  }
+
+  #collage {
+    width: 60vw;
+    float: right;
+  }
+  #collageThin {
+    display: none;
+  }
+
 }
+
 
 @media only screen and (min-width: 1001px) {
   .wrap {
